@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 public class HealthBarScrip : MonoBehaviour
 {
-
+    public int Points = 0;
     public Slider slider;
-
+    public Text PointsTxt;
     public void setmaxhealth(int EnemyHealth){
         slider.maxValue = EnemyHealth;
         slider.value = EnemyHealth;
@@ -22,6 +22,6 @@ public class HealthBarScrip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        PointsTxt.text = Points.ToString();
     }
 }
