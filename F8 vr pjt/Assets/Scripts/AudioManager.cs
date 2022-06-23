@@ -11,8 +11,10 @@ public class AudioManager : MonoBehaviour
 
 	public Sound[] sounds;
 
+	
 	void Awake()
 	{
+		//Faz com que o audiomanager seja transefirido entre cenas
 		if (instance != null)
 		{
 			Destroy(gameObject);

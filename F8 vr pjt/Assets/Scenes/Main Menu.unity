@@ -2780,7 +2780,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nome do jogo
+  m_text: SAVE THE TOWN
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -3242,6 +3242,33 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Digitar
     clip: {fileID: 8300000, guid: aa5e79964dd2f0d40ad47ac0edc12eda, type: 3}
+    volume: 1
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: 8b3af5a87c13761419f84f46cf0fcdca, type: 2}
+    source: {fileID: 0}
+  - name: Hurt
+    clip: {fileID: 8300000, guid: 635555fd2efaf4940b7ec88c10ec775e, type: 3}
+    volume: 1
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: 8b3af5a87c13761419f84f46cf0fcdca, type: 2}
+    source: {fileID: 0}
+  - name: Lose
+    clip: {fileID: 8300000, guid: 8a221644119be9b49a59e9209b27880c, type: 3}
+    volume: 1
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: 8b3af5a87c13761419f84f46cf0fcdca, type: 2}
+    source: {fileID: 0}
+  - name: TakeDamage
+    clip: {fileID: 8300000, guid: 24e82c7605f6bc941b79ce4fd22e115d, type: 3}
     volume: 1
     volumeVariance: 1
     pitch: 1

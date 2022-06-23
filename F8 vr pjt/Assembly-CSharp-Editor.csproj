@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{70C7C39F-8591-9615-C9B5-D616F39826DC}</ProjectGuid>
+    <ProjectGuid>{22285B11-A6C8-0E70-7494-E0722A647974}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -58,6 +58,7 @@
      <Compile Include="Assets\Oculus\SampleFramework\Editor\BuildSamples.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Editor\OculusSampleFrameworkUtil.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Editor\BuildAssetPackages.cs" />
+     <Compile Include="Assets\EmaceArt\Slavic World Free\Editor\WelcomeWindow.cs" />
      <Compile Include="Assets\GoogleVR\Legacy\Editor\Audio\GvrAudioSoundfieldEditor.cs" />
      <Compile Include="Assets\GoogleVR\Editor\Controller\GvrControllerVisualEditor.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\Firebase\Editor\FirebaseEnabler.cs" />
@@ -300,25 +301,25 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="log4netPlastic">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Antlr3.Runtime">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="unityplastic">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -669,160 +670,170 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.TestRunner">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{45E5E987-3ACC-6AF2-1B5D-792F144594C3}</Project>
+      <Project>{AFFC7CD3-0A1D-58C9-DB92-E56711C99376}</Project>
       <Name>Assembly-CSharp</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Editor.csproj">
-      <Project>{E72C2D34-6735-6486-158D-5DAA04CF9697}</Project>
+      <Project>{CE4945BE-23B1-2374-E8A6-C99D5BA61A8D}</Project>
       <Name>Oculus.VR.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Oculus.Platform.csproj">
-      <Project>{5CD66E13-6E10-12C9-CD12-B6D532F88D23}</Project>
+      <Project>{4636ADBA-9DC6-AAA2-4D7C-DFA018CA2B09}</Project>
       <Name>Oculus.Platform</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.Editor.csproj">
-      <Project>{EE7FA9B6-A86A-1CFE-B362-0AEBEA45A05F}</Project>
+      <Project>{343B9792-2522-B003-519E-7DD71B875CC5}</Project>
       <Name>Oculus.Interaction.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="AssistantCoreSDKEditor.csproj">
-      <Project>{B0B53A67-43E0-8D68-B414-CE852110DA6F}</Project>
+      <Project>{040D78A6-E11B-51A9-4FBC-437C24C4E45C}</Project>
       <Name>AssistantCoreSDKEditor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Oculus.Voice.Demo.csproj">
-      <Project>{14F4CAEF-D0A7-E88C-9248-00CFD76EBCDB}</Project>
+      <Project>{8C3DBDAF-F741-9929-F49D-8BDB42A39EA5}</Project>
       <Name>Oculus.Voice.Demo</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Oculus.AudioManager.csproj">
-      <Project>{FD53251E-2D8E-DE1C-D73B-6D3937450265}</Project>
+      <Project>{FC7CA83F-9CEF-D55E-B861-0EDE2725EA8E}</Project>
       <Name>Oculus.AudioManager</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Scripts.Editor.csproj">
-      <Project>{576ABAF9-D1F8-E46C-C435-AFEFEF7C5499}</Project>
+      <Project>{E2637A42-E935-90C4-B871-DAE7B2D7643E}</Project>
       <Name>Oculus.VR.Scripts.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Oculus.Spatializer.csproj">
-      <Project>{65ACAE6D-9737-DA8A-1FBD-55D833ECCEEB}</Project>
+      <Project>{68C5872D-20F8-4803-21CD-0E076D4DB039}</Project>
       <Name>Oculus.Spatializer</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.csproj">
-      <Project>{2BE26A02-773C-C0A8-5455-3B0352AEE183}</Project>
+      <Project>{32E4A709-8E1D-235C-3296-3C8EAAB9D251}</Project>
       <Name>Oculus.Interaction</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="AssistantCoreSDKRuntime.csproj">
-      <Project>{10CE0514-A75F-AF95-60C8-61289DA40EE6}</Project>
+      <Project>{EA12194A-6F4C-9363-7998-01F6AE3DF2A1}</Project>
       <Name>AssistantCoreSDKRuntime</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Oculus.Platform.Editor.csproj">
-      <Project>{E6AD76D0-EB57-C905-BDA0-7C6E8B7CDAA8}</Project>
+      <Project>{65B70EA3-AF15-E777-DF53-BAF513434C00}</Project>
       <Name>Oculus.Platform.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Oculus.AudioManager.Utils.Editor.csproj">
-      <Project>{03E2F79A-B4B3-17C5-6E13-97B87C216677}</Project>
+      <Project>{8DB77F0D-6D79-A5C6-CAA9-E7D019F6741A}</Project>
       <Name>Oculus.AudioManager.Utils.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Facebook.WitAI.csproj">
-      <Project>{70C051F9-E63A-BC9C-6437-76F0AEF3A347}</Project>
+      <Project>{86251607-B6CC-7C28-1768-658CAC842613}</Project>
       <Name>Facebook.WitAI</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="VoiceSDK.Editor.csproj">
-      <Project>{01D5D8E3-6FF7-1399-9B66-31897AE65B26}</Project>
+      <Project>{60028303-5A01-04B3-F402-73D13FC35CC2}</Project>
       <Name>VoiceSDK.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.InterfaceSupport.csproj">
-      <Project>{BD8BD8E8-752A-229F-3B2A-459EE52E174C}</Project>
+      <Project>{3B9599C2-B528-4676-A451-A8AABA5CDB6C}</Project>
       <Name>Oculus.Interaction.InterfaceSupport</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Facebook.Wit.Editor.csproj">
-      <Project>{35413E4F-9D51-A98D-E586-2A9D306F52FE}</Project>
+      <Project>{BD245279-308A-B63C-77A7-2CBF5F09AF5F}</Project>
       <Name>Facebook.Wit.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.csproj">
-      <Project>{20643211-6D1E-0111-A259-5996BE05980B}</Project>
+      <Project>{D4014931-00E9-5D2E-F910-F87A5BE98112}</Project>
       <Name>Oculus.VR</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Oculus.AudioManager.Audio.Editor.csproj">
-      <Project>{D2EFCAE9-8030-BF55-FD4A-A92169E5452F}</Project>
+      <Project>{3950AACA-FF5A-53F8-E0AE-5A1008FB7A49}</Project>
       <Name>Oculus.AudioManager.Audio.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Oculus.Spatializer.Editor.csproj">
-      <Project>{AEF635BF-4712-015F-63EA-C688941DA40A}</Project>
+      <Project>{2C41DFBC-5E7E-CD5A-9419-5A5F8EADB49E}</Project>
       <Name>Oculus.Spatializer.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Oculus.LipSync.Editor.csproj">
-      <Project>{BA11D7BE-0EB5-CC63-CF45-7736A1C65470}</Project>
+      <Project>{D3DA03F2-5FAF-6C4E-6878-8CADD6D1D944}</Project>
       <Name>Oculus.LipSync.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{D80D76F6-BBAA-3979-0972-6304440ED231}</Project>
+      <Name>NavMeshComponents</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{9D1796B3-5C39-51A2-B9E7-3722A868D0EF}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="Oculus.LipSync.csproj">
-      <Project>{D960F4EC-DD27-E8F2-435A-F56BCD664B65}</Project>
+      <Project>{ED2A0AEA-5FEC-CAE2-83B8-B7D503016A91}</Project>
       <Name>Oculus.LipSync</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="VoiceSDK.Runtime.csproj">
-      <Project>{6C73FAA2-59F6-A612-48AC-1ECB07D92649}</Project>
+      <Project>{F3E78232-7347-67E5-8D6F-E37440282B98}</Project>
       <Name>VoiceSDK.Runtime</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.Samples.csproj">
-      <Project>{9D50DED2-E90F-0940-CD99-FDDFE0F1251E}</Project>
+      <Project>{513FDAE5-619F-63F0-570F-ACB650151AA2}</Project>
       <Name>Oculus.Interaction.Samples</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>

@@ -2,6 +2,7 @@
 using UnityEngine;
 
 [System.Serializable]
+//Cria os valores para serem mudados na unity
 public class Sound {
 
 	public string name;

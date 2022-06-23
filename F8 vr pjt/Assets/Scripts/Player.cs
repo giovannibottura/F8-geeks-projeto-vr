@@ -68,7 +68,6 @@ public class Player : MonoBehaviour
     void gotHurt(){
         var color = DamageScream.GetComponent<Image>().color;
         color.a = 0.8f;
-        
         DamageScream.GetComponent<Image>().color = color;
     }
     void die(){

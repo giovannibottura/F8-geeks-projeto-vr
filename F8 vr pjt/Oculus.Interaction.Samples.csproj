@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9D50DED2-E90F-0940-CD99-FDDFE0F1251E}</ProjectGuid>
+    <ProjectGuid>{513FDAE5-619F-63F0-570F-ACB650151AA2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Oculus.Interaction.Samples</AssemblyName>
@@ -304,22 +304,22 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="log4netPlastic">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Antlr3.Runtime">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="unityplastic">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -667,23 +667,23 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/Backup Felipe ASUS/Unity Backup/F8-VR/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Users/femen/OneDrive/Documentos/GitHub/F8-geeks-projeto-vr/F8 vr pjt/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Oculus.VR.csproj">
-      <Project>{20643211-6D1E-0111-A259-5996BE05980B}</Project>
+      <Project>{D4014931-00E9-5D2E-F910-F87A5BE98112}</Project>
       <Name>Oculus.VR</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.csproj">
-      <Project>{2BE26A02-773C-C0A8-5455-3B0352AEE183}</Project>
+      <Project>{32E4A709-8E1D-235C-3296-3C8EAAB9D251}</Project>
       <Name>Oculus.Interaction</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
