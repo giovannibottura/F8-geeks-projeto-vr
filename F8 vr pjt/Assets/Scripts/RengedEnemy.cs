@@ -12,6 +12,8 @@ public class RengedEnemy : MonoBehaviour
     public int EnemyHealth;
     public int MaxEnemyHealth;
     
+    bool A1;
+
     public GameObject arrowstart;
 
     public Animator animRengeEnemy;
@@ -24,6 +26,8 @@ public class RengedEnemy : MonoBehaviour
 
     public LayerMask whatIsGround, whatIsPlayer;
 
+
+    public GameObject particle;
 
     //Patroling
     public Vector3 walkPoint;
@@ -56,8 +60,8 @@ public class RengedEnemy : MonoBehaviour
             Canfire = true;
         }
         if(EnemyHealth <= 0){
-            PlayerUi.Points = PlayerUi.Points + 1; 
-            Destroy(gameObject);
+            enemy.GetComponent<Animator>().Play("Die");
+            StartCoroutine(DieAnim());
         }
         HealthBar.sethealth(EnemyHealth);  
 
@@ -66,35 +70,10 @@ public class RengedEnemy : MonoBehaviour
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-        if (!playerInSightRange && !playerInAttackRange) Patroling();
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         if (playerInAttackRange && playerInSightRange) AttackPlayer();
     }
 
-    private void Patroling()
-    {
-        if (!walkPointSet) SearchWalkPoint();
-
-        if (walkPointSet)
-            ThisAgent.SetDestination(walkPoint);
-
-        Vector3 distanceToWalkPoint = transform.position - walkPoint;
-
-        //Walkpoint reached
-        if (distanceToWalkPoint.magnitude < 1f)
-            walkPointSet = false;
-    }
-    private void SearchWalkPoint()
-    {
-        //Calculate random point in range
-        float randomZ = Random.Range(-walkPointRange, walkPointRange);
-        float randomX = Random.Range(-walkPointRange, walkPointRange);
-
-        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
-
-        if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
-            walkPointSet = true;
-    }
 
     private void ChasePlayer()
     {
@@ -104,41 +83,37 @@ public class RengedEnemy : MonoBehaviour
 
     private void AttackPlayer()
     {
-        //Make sure enemy doesn't move
+
         ThisAgent.SetDestination(transform.position);
 
         transform.LookAt(player);
 
         if (!alreadyAttacked)
-        {
+        {  
             
-            enemy.GetComponent<Animator>().Play("Charge");
-            
-            if(animRengeEnemy.GetCurrentAnimatorStateInfo(0).IsName("Fire")){   
-                Rigidbody rb = Instantiate(projectile, arrowstart.transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-                rb.AddForce(transform.forward * 50f, ForceMode.Impulse);
-                rb.AddForce(transform.up * 4f, ForceMode.Impulse);
-                
-
-                alreadyAttacked = true;
-                Canfire = false;
-                Invoke(nameof(ResetAttack), timeBetweenAttacks);
-            }
-           
+            //if(Canfire == false){
+                enemy.GetComponent<Animator>().Play("Charge");
+                if(animRengeEnemy.GetCurrentAnimatorStateInfo(0).IsName("Fire")){   
+                    Rigidbody rb = Instantiate(projectile, transform.position, arrowstart.transform.rotation).GetComponent<Rigidbody>();
+                    rb.AddForce(transform.forward * 100f, ForceMode.Impulse);
+                    rb.AddForce(transform.up * 2f, ForceMode.Impulse);
+                    
+                    alreadyAttacked = true;
+                    Invoke(nameof(ResetAttack), timeBetweenAttacks);
+                }
         }
     }
     public void ResetAttack()
     {
         alreadyAttacked = false;
-        Canfire = false;
     }
     void OnTriggerEnter (Collider other){
         if(other.tag == "PlayerWeapon"){
-            enemy.GetComponent<Animator>().Play("EnemyHurt");
             EnemyHealth = EnemyHealth - 1;
             GetComponent<NavMeshAgent>().speed = 0;
-          //  StartCoroutine(ExampleCoroutine());
+            StartCoroutine(ExampleCoroutine());
             HealthBar.sethealth(EnemyHealth);
+            Rigidbody rb = Instantiate(particle, transform.position, transform.rotation).GetComponent<Rigidbody>();
         }
     }
     private void DestroyEnemy()
@@ -146,4 +121,24 @@ public class RengedEnemy : MonoBehaviour
         Destroy(gameObject);
     }
 
+        IEnumerator ExampleCoroutine()
+    {
+        yield return new WaitForSeconds(2);
+        GetComponent<NavMeshAgent>().speed = 5 ;
+    }
+    IEnumerator DieAnim(){
+        yield return new WaitForSeconds(1);
+        PlayerUi.points = PlayerUi.points + 1; 
+        Destroy(gameObject);
+    }
+
+    
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, sightRange);
+    }
 }
+

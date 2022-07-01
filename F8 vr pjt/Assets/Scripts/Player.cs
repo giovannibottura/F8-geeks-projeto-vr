@@ -5,24 +5,36 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public PlayerUI playerUI;
+    public Farmer farmer;
+    public bool BBColected;
+    public Child BBscript;
+    public bool CanColectBB;
 
+    public AudioClip RunSound;
+    public AudioClip WalkSound;
+    AudioSource AtackSound;
+    
+    public PlayerUI playerUI;
     public GameObject DamageScream;
     public HealthBarScrip HealthBar;
     public int health;
     
     public float timeForAtack;
     public float timeForDefend;    
+    
     bool Invencible;
-    public int maxHealth = 5;
+    public int maxHealth;
     public Animator PlayerAnim;
-  
+    
+    public bool CanColect;
+
     void Start()
     {  
+        CanColectBB = false;
+        AtackSound = GetComponent<AudioSource>();
 
-
-       HealthBar.setmaxhealth(maxHealth);
-       health = maxHealth;
+        HealthBar.setmaxhealth(maxHealth);
+        health = maxHealth;
     }
 
     // Update is called once per frame
@@ -32,6 +44,7 @@ public class Player : MonoBehaviour
         if(playerUI.AT == false){
             if(Input.GetMouseButtonDown(0)){
                 PlayerAnim.GetComponent<Animator>().Play("PlayerAttack");   
+                AtackSound.Play(0);
               
             }
         }    
@@ -53,21 +66,64 @@ public class Player : MonoBehaviour
                 DamageScream.GetComponent<Image>().color = color;
             }
         }
+        
+
+
+        if(Input.GetKeyDown("w")){
+            AtackSound.PlayOneShot(WalkSound);
+        }
+         if(Input.GetKeyUp("w")){
+            AtackSound.Stop();
+        }
+        //  if(Input.GetKeyDown("w") && Input.GetKeyDown(KeyCode.LeftShift)){
+        //     AtackSound.PlayOneShot(WalkSound);
+        // }        
+        // if(Input.GetKeyUp("w") && Input.GetKeyUp(KeyCode.LeftShift)){
+        //    AtackSound.Stop();   
+        // }  
+        if(BBColected == true){
+            if(CanColectBB == true){
+                if(Input.GetKeyDown(KeyCode.C)){
+                    BBscript.BB.SetActive(false);
+                    farmer.BBColected = true;
+                    BBColected = false;
+                }        
+            }
+        }
+        HealthBar.sethealth(health);
     }
 
     void OnTriggerEnter(Collider other){
-        if(Invencible == false){
-            if(other.tag == "Damage enemy"){
+       if(Invencible == false){
+            if(other.tag == "DamageBox"){
                 health = health -1 ;
                 HealthBar.sethealth(health);
                 gotHurt();
+                print("mpjklfads");
             }
         }    
+    
+        if(other.tag == "Farmer"){
+            CanColectBB = true;
+        }
+
+        if(other.tag == "Tresure"){
+            CanColect = true;
+        }
+    }
+    void OnTriggerExit(Collider other){
+        if(other.tag == "Tresure" ){
+            CanColect = false;
+        } 
+        if(other.tag == "Farmer"){
+            CanColectBB = false;
+        }                
     }
 
     void gotHurt(){
         var color = DamageScream.GetComponent<Image>().color;
-        color.a = 0.8f;
+        color.a = 0.6f;
+        
         DamageScream.GetComponent<Image>().color = color;
     }
     void die(){

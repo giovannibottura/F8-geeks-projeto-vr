@@ -13797,25 +13797,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77e69471a3c5d244cb00b608bc453e42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerUi: {fileID: 0}
+  PlayerUi: {fileID: 5060391704723468187, guid: b43d3eedb8010fa48aa3e9ebb57e5f38, type: 3}
   HealthBar: {fileID: 1308287150205115776}
-  Player: {fileID: 0}
+  Player: {fileID: 6740107234659833378, guid: dd09e96d7f8ea8a4cb20ce61ec92e8b8, type: 3}
   EnemyHealth: 0
   MaxEnemyHealth: 1
   arrowstart: {fileID: 5536477332902406964}
   animRengeEnemy: {fileID: 5536477332140936302}
   enemy: {fileID: 5536477332140936297}
-  agent: {fileID: 5536477332140936296}
-  player: {fileID: 0}
+  ThisAgent: {fileID: 5536477332140936296}
+  player: {fileID: 7232472267285759544, guid: dd09e96d7f8ea8a4cb20ce61ec92e8b8, type: 3}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 128
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 64
+  particle: {fileID: 1720059862606500685, guid: a6fe6daabacb5304a862a96c8ec96199, type: 3}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 3
-  timeBetweenAttacks: 5
+  timeBetweenAttacks: 3.05
   alreadyAttacked: 0
   projectile: {fileID: 6525224372245612732, guid: e4e7a227b692d2940bb7d9fdd8fbc1b7, type: 3}
   sightRange: 100
@@ -23480,13 +23481,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5536477332902406964}
-  m_LocalRotation: {x: -0, y: -0.09498262, z: -0, w: 0.9954789}
+  m_LocalRotation: {x: -1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0.037, y: 0.24100006, z: 0.569}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5536477332140936303}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: -10.901, z: 0}
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 0}
 --- !u!1 &5536477332905628741
 GameObject:
   m_ObjectHideFlags: 0

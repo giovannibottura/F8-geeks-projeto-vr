@@ -4,7 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - AudioManager
+  - Damage enemy
+  - Attack Defender
+  - AttackDefender
+  - A1
+  - PlayerWeapon
+  - Enemy
+  - Tresure
+  - Farmer
+  - DamageBox
   layers:
   - Default
   - TransparentFX
@@ -12,8 +20,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Player
+  - Ground
   - 
   - 
   - 
